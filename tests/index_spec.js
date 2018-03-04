@@ -34,7 +34,7 @@ t.describe('TrackServerRenderer', () => {
 
     t.beforeEach(() => {
       mockParams = {hoge: 'fuga'};
-      mockRequest = new Request('http://localhost:3000/hoge', mockParams)
+      mockRequest = new Request('http://localhost:3000/hoge', mockParams);
     });
 
     t.it('Render html', () => {

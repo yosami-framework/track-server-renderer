@@ -8,7 +8,7 @@ t.describe('Request', () => {
 
   t.beforeEach(() => {
     mockParams = {hoge: 'fuga'};
-    request = new Request('http://localhost:3000/hoge', mockParams)
+    request = new Request('http://localhost:3000/hoge', mockParams);
   });
 
   t.describe('#url', () => {
