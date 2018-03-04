@@ -22,6 +22,14 @@ t.describe('Asset', () => {
     });
   });
 
+  t.describe('#directory', () => {
+    const subject = (() => asset.directory);
+
+    t.it('Return paths', () => {
+      t.expect(subject()).deepEquals(path.resolve(__dirname, 'fixtures', 'assets'));
+    });
+  });
+
   t.describe('#raws', () => {
     const subject = (() => asset.raws);
 
