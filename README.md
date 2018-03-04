@@ -12,12 +12,15 @@ npm install track-server-renderer
 ## Usage
 
 ```javascript
-const Renderer    = require('track-server-renderer');
-const Asset       = require('track-server-renderer/lib/asset');
-const Request     = require('track-server-renderer/lib/request');
-const Initializer = require('track-server-renderer/lib/initializer');
+const Renderer = require('track-server-renderer');
+const Asset    = require('track-server-renderer/lib/asset');
+const Config   = require('track-server-renderer/lib/config');
+const Request  = require('track-server-renderer/lib/request');
 
-Initializer.initialize(require('mithril/test-utils/browserMock'));
+Config.configure((c) => {
+  c.browserMock = require('mithril/test-utils/browserMock');
+  c.cache = new CacheBase();
+});
 
 const asset    = new Asset(assetsDir, 'mock.js', 'mock.css');
 const renderer = TrackServerRenderer(TrackController, asset);
