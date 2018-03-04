@@ -4,6 +4,7 @@ const Cheerio             = require('cheerio');
 const TrackController     = require('track-controller');
 const path                = require('path');
 const Asset               = require('../lib/asset');
+const Config              = require('../lib/config');
 const Request             = require('../lib/request');
 const TrackServerRenderer = require('../lib/index');
 
@@ -60,6 +61,22 @@ t.describe('TrackServerRenderer', () => {
           'X-SERVER-PARAMS': mockParams,
           'X-SERVER-URL':    'http://localhost:3000/hoge',
           'X-SERVER-ASSETS': asset.serverPaths,
+        });
+      });
+    });
+
+    t.context('When has cache', () => {
+      t.beforeEach(() => {
+        Config.cache.get = t.spy(() => 'cached value');
+      });
+
+      t.afterEach(() => {
+        Config.cache.get = t.spy(() => null);
+      });
+
+      t.it('Return cache', () => {
+        return subject().then((html) => {
+          t.expect(html).equals('cached value');
         });
       });
     });
