@@ -1,6 +1,6 @@
 {
   "name": "track-server-renderer",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Server-side renderer for track.",
   "main": "lib/index.js",
   "repository": "alfa-jpn/track-server-renderer.git",
@@ -12,9 +12,9 @@
   "license": "ISC",
   "dependencies": {
     "cheerio": "^1.0.0-rc.2",
+    "css-tree": "^1.0.0-alpha.28",
     "html-minifier": "^3.5.9",
     "mithril-node-render": "^2.3.0",
-    "postcss": "^6.0.19",
     "track-config": "0.0.2",
     "xhr2": "^0.1.4"
   },
