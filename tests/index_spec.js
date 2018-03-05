@@ -50,7 +50,7 @@ t.describe('TrackServerRenderer', () => {
     t.it('Render style', () => {
       return subject().then((html) => {
         dom = Cheerio.load(html);
-        t.expect(dom('style').toString()).equals('<style id="preload-css">.hoge { background: #0ff };</style>');
+        t.expect(dom('style').toString()).equals('<style id="preload-css">.hoge{background:#0ff}</style>');
       });
     });
 

@@ -17,7 +17,7 @@ t.describe('Asset', () => {
     t.it('Return paths', () => {
       t.expect(subject()).deepEquals({
         js:  '720e86eb7e65b9e335363d9831524168',
-        css: 'd67eb08e3d122fdd4d7054dd6d25fb33',
+        css: 'b2cb70ce724181d2962965d40c05b1df',
       });
     });
   });
@@ -36,7 +36,7 @@ t.describe('Asset', () => {
     t.it('Return paths', () => {
       t.expect(subject()).deepEquals({
         js:  'var hoge = \'fuga\';\n',
-        css: '.hoge { background: #0ff }; .fuga { background: #ff0 };\n',
+        css: '.hoge { background: #0ff } .fuga { background: #ff0 }\n',
       });
     });
   });
