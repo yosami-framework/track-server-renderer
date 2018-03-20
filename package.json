@@ -1,6 +1,6 @@
 {
   "name": "track-server-renderer",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Server-side renderer for track.",
   "main": "lib/index.js",
   "repository": "alfa-jpn/track-server-renderer.git",
@@ -15,13 +15,24 @@
     "css-tree": "^1.0.0-alpha.28",
     "html-minifier": "^3.5.9",
     "mithril-node-render": "^2.3.0",
-    "track-config": "0.0.2",
     "xhr2": "^0.1.4"
   },
   "devDependencies": {
     "eslint": "^4.17.0",
     "eslint-config-google": "^0.9.1",
-    "track-controller": "0.0.9",
-    "track-spec": "0.0.2"
+    "mithril": "^1.1.6",
+    "track-component": "0.0.7",
+    "track-config": "0.0.3",
+    "track-controller": "0.0.10",
+    "track-dsl": "0.0.3",
+    "track-eventor": "0.0.5",
+    "track-helpers": "0.0.1",
+    "track-i18n": "0.0.2",
+    "track-model": "0.0.5",
+    "track-spec": "0.0.3",
+    "track-view": "0.0.4"
+  },
+  "peerDependencies": {
+    "mithril": "1.x"
   }
 }
