@@ -24,8 +24,8 @@ t.describe('TrackServerRenderer', () => {
       }
     });
 
-    const assetsDir = path.resolve(__dirname, 'fixtures', 'assets');
-    asset = new Asset(assetsDir, 'mock.js', 'mock.css');
+    const assetsDir = path.resolve(__dirname, 'fixtures');
+    asset = new Asset(assetsDir, '/assets/mock.js', '/assets/mock.css');
     renderer = new TrackServerRenderer(MockController, asset);
   });
 
@@ -60,7 +60,7 @@ t.describe('TrackServerRenderer', () => {
         t.expect(attrs).deepEquals({
           'X-SERVER-PARAMS': mockParams,
           'X-SERVER-URL':    'http://localhost:3000/hoge',
-          'X-SERVER-ASSETS': asset.serverPaths,
+          'X-SERVER-ASSETS': asset.paths,
         });
       });
     });
