@@ -1,6 +1,8 @@
 # TrackServerRenderer
 Server-side renderer for track.
 
+[![Build Status](https://travis-ci.org/yosami-framework/track-server-renderer.svg?branch=master)](https://travis-ci.org/yosami-framework/track-server-renderer)
+
 ## Installation
 
 ### npm
