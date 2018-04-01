@@ -1,9 +1,9 @@
 {
   "name": "track-server-renderer",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Server-side renderer for track.",
   "main": "lib/index.js",
-  "repository": "alfa-jpn/track-server-renderer.git",
+  "repository": "yosami-framework/track-server-renderer.git",
   "scripts": {
     "linter": "eslint ./",
     "test": "ospec"
@@ -13,12 +13,12 @@
   "dependencies": {
     "cheerio": "^1.0.0-rc.2",
     "css-tree": "^1.0.0-alpha.28",
-    "html-minifier": "^3.5.9",
+    "html-minifier": "^3.5.13",
     "mithril-node-render": "^2.3.0",
     "xhr2": "^0.1.4"
   },
   "devDependencies": {
-    "eslint": "^4.17.0",
+    "eslint": "^4.19.1",
     "eslint-config-google": "^0.9.1",
     "mithril": "^1.1.6",
     "track-component": "0.0.7",
