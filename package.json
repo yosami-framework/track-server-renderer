@@ -1,6 +1,6 @@
 {
   "name": "track-server-renderer",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Server-side renderer for track.",
   "main": "lib/index.js",
   "repository": "yosami-framework/track-server-renderer.git",
@@ -22,7 +22,7 @@
     "eslint-config-google": "^0.9.1",
     "mithril": "^1.1.6",
     "track-component": "0.0.7",
-    "track-config": "0.0.3",
+    "track-config": "0.0.5",
     "track-controller": "0.0.10",
     "track-dsl": "0.0.3",
     "track-eventor": "0.0.5",
@@ -33,6 +33,7 @@
     "track-view": "0.0.4"
   },
   "peerDependencies": {
-    "mithril": "1.x"
+    "mithril": "1.x",
+    "track-config": "0.0.x"
   }
 }
