@@ -60,7 +60,6 @@ t.describe('TrackServerRenderer', () => {
         t.expect(attrs).deepEquals({
           'X-SERVER-PARAMS': mockParams,
           'X-SERVER-URL':    'http://localhost:3000/hoge',
-          'X-SERVER-ASSETS': asset.paths,
         });
       });
     });
