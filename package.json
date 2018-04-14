@@ -1,6 +1,6 @@
 {
   "name": "track-server-renderer",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "Server-side renderer for track.",
   "main": "lib/index.js",
   "repository": "yosami-framework/track-server-renderer.git",
