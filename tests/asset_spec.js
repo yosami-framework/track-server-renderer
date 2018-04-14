@@ -12,6 +12,14 @@ t.describe('Asset', () => {
     asset = new Asset(publicDir, '/assets/mock.js', '/assets/mock.css');
   });
 
+  t.describe('#directory', () => {
+    const subject = (() => asset.directory);
+
+    t.it('Return paths', () => {
+      t.expect(subject()).deepEquals(path.resolve(__dirname, 'fixtures'));
+    });
+  });
+
   t.describe('#raws', () => {
     const subject = (() => asset.raws);
 
