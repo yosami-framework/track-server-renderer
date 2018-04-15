@@ -15,8 +15,19 @@ t.describe('Asset', () => {
   t.describe('#directory', () => {
     const subject = (() => asset.directory);
 
-    t.it('Return paths', () => {
+    t.it('Return path', () => {
       t.expect(subject()).deepEquals(path.resolve(__dirname, 'fixtures'));
+    });
+  });
+
+  t.describe('#paths', () => {
+    const subject = (() => asset.paths);
+
+    t.it('Return paths', () => {
+      t.expect(subject()).deepEquals({
+        js:  '/assets/mock.js',
+        css: '/assets/mock.css',
+      });
     });
   });
 
