@@ -58,6 +58,7 @@ t.describe('TrackServerRenderer', () => {
       return subject().then((html) => {
         attrs = JSON.parse(Cheerio.load(html)('#attrs').text());
         t.expect(attrs).deepEquals({
+          'X-SERVER-ASSETS': asset.paths,
           'X-SERVER-PARAMS': mockParams,
           'X-SERVER-URL':    'http://localhost:3000/hoge',
         });
